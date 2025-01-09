@@ -1,10 +1,10 @@
 import { PostView } from '../PostView';
 import './PostListView.css';
-import {Posts} from "../../api/Posts.ts";
+import { Posts } from '../../api/Posts.ts';
 
 export type PostListView = {
-  postList: Posts
-}
+  postList: Posts;
+};
 
 export const PostListView = ({ postList }: PostListView) => {
   return (

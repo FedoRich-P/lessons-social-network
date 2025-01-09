@@ -1,10 +1,7 @@
 import { JSONFilePreset } from 'lowdb/node';
 import { pbkdf2Sync } from 'node:crypto';
 
-const database = await JSONFilePreset<Record<string, string>>(
-  'passwords.json',
-  {}
-);
+const database = await JSONFilePreset<Record<string, string>>('passwords.json', {});
 
 export class Passwords {
   static getOne(userId: string): string | undefined {

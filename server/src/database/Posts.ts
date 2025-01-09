@@ -37,9 +37,7 @@ export class Posts {
     let pageCount = 1;
 
     if (searchString) {
-      list = list.filter((post) =>
-        post.text.toLowerCase().includes(searchString.toLowerCase())
-      );
+      list = list.filter((post) => post.text.toLowerCase().includes(searchString.toLowerCase()));
     }
 
     if (sortDirection) {

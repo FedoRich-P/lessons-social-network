@@ -6,10 +6,7 @@ export interface IUser {
   username: string;
 }
 
-export const database = await JSONFilePreset<Record<string, IUser>>(
-  'users.json',
-  {}
-);
+export const database = await JSONFilePreset<Record<string, IUser>>('users.json', {});
 
 export class Users {
   static getOne(id: string): IUser | undefined {

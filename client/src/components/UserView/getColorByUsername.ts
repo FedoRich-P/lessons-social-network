@@ -21,38 +21,31 @@
 const colors = [
   {
     color: 'rgb(255,147,128)',
-    gradient:
-      'repeating-linear-gradient(-45deg, #992f37 0px, #992f37 5px, #ff9380 5px, #ff9380 10px)',
+    gradient: 'repeating-linear-gradient(-45deg, #992f37 0px, #992f37 5px, #ff9380 5px, #ff9380 10px)',
   },
   {
     color: 'rgb(236,176,78)',
-    gradient:
-      'repeating-linear-gradient(-45deg, #c35714 0px, #c35714 5px, #ecb04e 5px, #ecb04e 10px)',
+    gradient: 'repeating-linear-gradient(-45deg, #c35714 0px, #c35714 5px, #ecb04e 5px, #ecb04e 10px)',
   },
   {
     color: 'rgb(198,151,255)',
-    gradient:
-      'repeating-linear-gradient(-45deg, #5e31c8 0px, #5e31c8 5px, #c697ff 5px, #c697ff 10px)',
+    gradient: 'repeating-linear-gradient(-45deg, #5e31c8 0px, #5e31c8 5px, #c697ff 5px, #c697ff 10px)',
   },
   {
     color: 'rgb(167,235,110)',
-    gradient:
-      'repeating-linear-gradient(-45deg, #167e2d 0px, #167e2d 5px, #a7eb6e 5px, #a7eb6e 10px)',
+    gradient: 'repeating-linear-gradient(-45deg, #167e2d 0px, #167e2d 5px, #a7eb6e 5px, #a7eb6e 10px)',
   },
   {
     color: 'rgb(64,216,208)',
-    gradient:
-      'repeating-linear-gradient(-45deg, #045c7f 0px, #045c7f 5px, #40d8d0 5px, #40d8d0 10px)',
+    gradient: 'repeating-linear-gradient(-45deg, #045c7f 0px, #045c7f 5px, #40d8d0 5px, #40d8d0 10px)',
   },
   {
     color: 'rgb(82,191,255)',
-    gradient:
-      'repeating-linear-gradient(-45deg, #0b5494 0px, #0b5494 5px, #52bfff 5px, #52bfff 10px)',
+    gradient: 'repeating-linear-gradient(-45deg, #0b5494 0px, #0b5494 5px, #52bfff 5px, #52bfff 10px)',
   },
   {
     color: 'rgb(255,134,166)',
-    gradient:
-      'repeating-linear-gradient(-45deg, #8e366e 0px, #8e366e 5px, #ff86a6 5px, #ff86a6 10px)',
+    gradient: 'repeating-linear-gradient(-45deg, #8e366e 0px, #8e366e 5px, #ff86a6 5px, #ff86a6 10px)',
   },
   {
     color: 'rgb(63,162,254)',

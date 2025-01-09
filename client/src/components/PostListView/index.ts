@@ -1,1 +1,1 @@
-export * from './FetchPostListView'
+export * from './FetchPostListView';

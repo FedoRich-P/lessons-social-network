@@ -8,20 +8,14 @@ export interface IFormFieldProps {
   errorMessage?: string;
 }
 
-export const FormField: FC<IFormFieldProps> = ({
-  label,
-  children,
-  errorMessage,
-}) => {
+export const FormField: FC<IFormFieldProps> = ({ label, children, errorMessage }) => {
   return (
     <label className="form-field">
       <span className="form-field__label">{label}</span>
 
       {children}
 
-      {errorMessage && (
-        <span className="form-field__error">{errorMessage}</span>
-      )}
+      {errorMessage && <span className="form-field__error">{errorMessage}</span>}
     </label>
   );
 };

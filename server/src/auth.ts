@@ -34,10 +34,7 @@ export function authorizeRequest(request: Request): string | undefined {
   }
 }
 
-export function authorizeResponse(
-  response: Response,
-  userId: string
-): Response {
+export function authorizeResponse(response: Response, userId: string): Response {
   return response.cookie('auth', createToken(userId), {
     httpOnly: true,
   });
