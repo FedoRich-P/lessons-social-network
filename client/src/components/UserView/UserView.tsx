@@ -1,6 +1,7 @@
 import { getColorIndexByUsername, getColorByIndex, getGradientByIndex } from './getColorByUsername';
 import './UserView.css';
 import { User } from '../../api/Users.ts';
+import { useLogout } from '../LoginForm/useLogout.tsx';
 
 export type UserViewProps = {
   user: User;
@@ -8,6 +9,7 @@ export type UserViewProps = {
 
 export const UserView = ({ user }: UserViewProps) => {
   const colorIndex = getColorIndexByUsername(user.username);
+  const logout = useLogout();
 
   return (
     <div className="user-view">
@@ -18,6 +20,8 @@ export const UserView = ({ user }: UserViewProps) => {
       <span className="user-view__username" style={{ color: getColorByIndex(colorIndex) }}>
         {user.username}
       </span>
+
+      <button onClick={() => logout()}>Выйти</button>
     </div>
   );
 };

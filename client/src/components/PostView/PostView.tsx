@@ -11,15 +11,17 @@ function formatDate(timestamp: number): string {
 
 export type PostViewProps = {
   post: Post;
+  onDelete: (postId: string) => void;
 };
 
-export const PostView = ({ post }: PostViewProps) => {
+export const PostView = ({ post, onDelete }: PostViewProps) => {
   return (
     <div className="post-view">
       <FetchUserView userId={post.authorId} />
       <p className="post-view__text">{post.text}</p>
 
       <time className="post-view__time">{formatDate(post.createdAt)}</time>
+      <button onClick={() => onDelete(post.id)}>Удалить</button>
     </div>
   );
 };

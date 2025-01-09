@@ -47,3 +47,9 @@ export function fetchMe(): Promise<User> {
     .then((response) => response.json())
     .then((data) => UserSchema.parse(data));
 }
+
+export async function logout(): Promise<void> {
+  await fetch('/api/auth/logout', {
+    method: 'POST',
+  });
+}

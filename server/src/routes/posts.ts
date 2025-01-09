@@ -55,3 +55,22 @@ postsRouter.post('/', async (req, res) => {
 
   res.status(201).send(post.id);
 });
+
+postsRouter.delete('/:id', async (req, res) => {
+  const userId = authorizeRequest(req);
+  if (!userId) {
+    return res.status(401).send('Unauthorized');
+  }
+  const postId = req.params.id;
+  try {
+    await Posts.delete(postId);
+    res.status(200).send('Пост удалён');
+  } catch (error) {
+    if (error instanceof Error) {
+      if (error.message === 'Пост не найден') {
+        return res.status(404).send('Пост не найден');
+      }
+    }
+    res.status(500).send('Ошибка при удалении поста');
+  }
+});

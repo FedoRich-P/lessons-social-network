@@ -75,3 +75,11 @@ export function createPost(text: string): Promise<void> {
     .then(validateResponse)
     .then(() => {});
 }
+
+export function deletePost(id: string): Promise<void> {
+  return fetch(`/api/posts/${id}`, {
+    method: 'DELETE',
+  })
+    .then(validateResponse)
+    .then(() => {});
+}

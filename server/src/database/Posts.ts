@@ -75,4 +75,13 @@ export class Posts {
 
     return post;
   }
+
+  static async delete(id: string): Promise<void> {
+    await database.update((data) => {
+      if (!data[id]) {
+        throw new Error('Пост не найден');
+      }
+      delete data[id];
+    });
+  }
 }
